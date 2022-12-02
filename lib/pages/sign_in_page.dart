@@ -104,6 +104,75 @@ class SingInPage extends StatelessWidget {
               color: backgroundColor2,
               borderRadius: BorderRadius.circular(12),
             ),
+            child: Center(
+              child: Row(
+                children: [
+                  Image.asset(
+                    'assets/icon_password.png',
+                    width: 17,
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: TextFormField(
+                      style: primaryTextStyle,
+                      obscureText: true, //merubah paswornd menjadi bintang ***
+                      decoration: InputDecoration.collapsed(
+                        hintText: 'Your Password',
+                        hintStyle: subtitleTextStyle,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget singInButton() {
+    return Container(
+      height: 50,
+      width: double.infinity,
+      margin: const EdgeInsets.only(top: 30),
+      child: TextButton(
+        onPressed: () {},
+        style: TextButton.styleFrom(
+          backgroundColor: primaryColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
+        child: Text(
+          'Sing In',
+          style: primaryTextStyle.copyWith(
+            fontSize: 16,
+            fontWeight: medium,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget footer() {
+    return Container(
+      margin: EdgeInsets.only(bottom: 30),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Don\'t have an account?',
+            style: subtitleTextStyle.copyWith(
+              fontSize: 12,
+            ),
+          ),
+          Text(
+            'Sing In',
+            style: purpelTextStyle.copyWith(
+              fontSize: 12,
+              fontWeight: medium,
+            ),
           )
         ],
       ),
@@ -114,6 +183,7 @@ class SingInPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor1,
+      resizeToAvoidBottomInset: false,
       body: SafeArea(
         child: Container(
           margin: EdgeInsets.symmetric(
@@ -125,6 +195,9 @@ class SingInPage extends StatelessWidget {
               header(),
               emailInput(),
               passwordInput(),
+              singInButton(),
+              const Spacer(),
+              footer(),
             ],
           ),
         ),
