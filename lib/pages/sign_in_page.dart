@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shamos/theme.dart';
 
@@ -157,7 +157,7 @@ class SingInPage extends StatelessWidget {
 
   Widget footer() {
     return Container(
-      margin: EdgeInsets.only(bottom: 30),
+      margin: const EdgeInsets.only(bottom: 30),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

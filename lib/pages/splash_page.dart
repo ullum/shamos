@@ -15,7 +15,8 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     // TODO: implement initState
 
-    Timer(Duration(seconds: 3), () => Navigator.pushNamed(context, '/sing-in'));
+    Timer(const Duration(seconds: 3),
+        () => Navigator.pushNamed(context, '/sing-in'));
 
     super.initState();
   }
