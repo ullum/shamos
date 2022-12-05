@@ -229,13 +229,15 @@ class SignUpPage extends StatelessWidget {
     );
   }
 
-  Widget signUpButton() {
+  Widget signUpButton(context) {
     return Container(
       height: 50,
       width: double.infinity,
       margin: const EdgeInsets.only(top: 30),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/home');
+        },
         style: TextButton.styleFrom(
           backgroundColor: primaryColor,
           shape: RoundedRectangleBorder(
@@ -277,7 +279,7 @@ class SignUpPage extends StatelessWidget {
                 fontWeight: medium,
               ),
             ),
-          )
+          ),
         ],
       ),
     );
@@ -301,7 +303,7 @@ class SignUpPage extends StatelessWidget {
               usernameInput(),
               emailInput(),
               passwordInput(),
-              signUpButton(),
+              signUpButton(context),
               const Spacer(),
               footer(context),
             ],

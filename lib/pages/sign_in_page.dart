@@ -131,13 +131,15 @@ class SignInPage extends StatelessWidget {
     );
   }
 
-  Widget singInButton() {
+  Widget singInButton(context) {
     return Container(
       height: 50,
       width: double.infinity,
       margin: const EdgeInsets.only(top: 30),
       child: TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/home');
+        },
         style: TextButton.styleFrom(
           backgroundColor: primaryColor,
           shape: RoundedRectangleBorder(
@@ -200,7 +202,7 @@ class SignInPage extends StatelessWidget {
               header(),
               emailInput(),
               passwordInput(),
-              singInButton(),
+              singInButton(context),
               const Spacer(),
               footer(context),
             ],
