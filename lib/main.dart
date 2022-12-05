@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shamos/pages/sign_in_page.dart';
+import 'package:shamos/pages/sign_up_page.dart';
 import 'package:shamos/pages/splash_page.dart';
 
 void main() => runApp(const MyApp());
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/': (context) => const SplashPage(),
-        '/sing-in': (context) => const SingInPage(),
+        '/sign-in': (context) => const SignInPage(),
+        '/sign-up': (context) => const SignUpPage(),
       },
     );
   }
