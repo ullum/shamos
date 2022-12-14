@@ -16,7 +16,7 @@ class ProductCard extends StatelessWidget {
       decoration: BoxDecoration(
         // membuat card
         borderRadius: BorderRadius.circular(20), //membuat siku melengkung
-        color: backgroundColor5,
+        color: Color(0xffECEDEF),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
