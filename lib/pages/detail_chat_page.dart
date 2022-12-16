@@ -49,8 +49,8 @@ class DetailChatPage extends StatelessWidget {
       return Container(
         width: 225,
         height: 74,
-        margin: EdgeInsets.only(bottom: 20),
-        padding: EdgeInsets.all(10),
+        margin: const EdgeInsets.only(bottom: 20),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: backgroundColor4,
           borderRadius: BorderRadius.circular(12),
@@ -69,7 +69,7 @@ class DetailChatPage extends StatelessWidget {
                 width: 54,
               ),
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -128,7 +128,7 @@ class DetailChatPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(width: 20),
+                const SizedBox(width: 20),
                 Image.asset(
                   'assets/button_send.png',
                   width: 45,
@@ -145,10 +145,11 @@ class DetailChatPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           horizontal: 30,
         ),
-        children: [
+        children: const [
           ChatBubble(
             isSender: true,
             text: 'Hi, This item is still available',
+            hasProduct: true,
           ),
           ChatBubble(
             isSender: false,
