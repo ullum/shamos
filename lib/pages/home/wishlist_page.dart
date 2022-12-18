@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shamos/theme.dart';
 
+import '../../widget/wishlist_card.dart';
+
 class WishlistPage extends StatelessWidget {
   const WishlistPage({Key key}) : super(key: key);
 
@@ -12,11 +14,12 @@ class WishlistPage extends StatelessWidget {
         backgroundColor: backgroundColor1,
         centerTitle: true,
         title: const Text('Favorite Shoes'),
-        elevation: 0,
+        elevation: 0, // menghilangkan shadow di appbar
         automaticallyImplyLeading: false,
       );
     }
 
+    // emptyWishlist merupakan tampilan page saat wishliast kososng yang ada di menu wishlist
     Widget emptyWishlist() {
       return Expanded(
         child: Container(
@@ -73,10 +76,29 @@ class WishlistPage extends StatelessWidget {
       );
     }
 
+    Widget content() {
+      return Expanded(
+        child: Container(
+          color: backgroundColor3,
+          child: ListView(
+            padding: EdgeInsets.symmetric(
+              horizontal: defaultMargin,
+            ),
+            children: [
+              WishlistCard(),
+              WishlistCard(),
+              WishlistCard(),
+            ],
+          ),
+        ),
+      );
+    }
+
     return Column(
       children: [
         header(),
-        emptyWishlist(),
+        // emptyWishlist(),
+        content(),
       ],
     );
   }
