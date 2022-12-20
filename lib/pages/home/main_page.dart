@@ -54,7 +54,9 @@ class _MainPageState extends State<MainPage> {
                   child: Image.asset(
                     'assets/icon_home.png',
                     width: 21,
-                    color: currentIndex == 0 ? primaryColor : const Color(0xff808191),
+                    color: currentIndex == 0
+                        ? primaryColor
+                        : const Color(0xff808191),
                   ),
                 ),
                 label: '',
@@ -70,7 +72,9 @@ class _MainPageState extends State<MainPage> {
                   child: Image.asset(
                     'assets/icon_chat.png',
                     width: 20,
-                    color: currentIndex == 1 ? primaryColor : const Color(0xff808191),
+                    color: currentIndex == 1
+                        ? primaryColor
+                        : const Color(0xff808191),
                   ),
                 ),
                 label: '',
@@ -86,7 +90,9 @@ class _MainPageState extends State<MainPage> {
                   child: Image.asset(
                     'assets/icon_wishlist.png',
                     width: 21,
-                    color: currentIndex == 2 ? primaryColor : const Color(0xff808191),
+                    color: currentIndex == 2
+                        ? primaryColor
+                        : const Color(0xff808191),
                   ),
                 ),
                 label: '',
@@ -101,7 +107,9 @@ class _MainPageState extends State<MainPage> {
                   child: Image.asset(
                     'assets/icon_profile.png',
                     width: 18,
-                    color: currentIndex == 3 ? primaryColor : const Color(0xff808191),
+                    color: currentIndex == 3
+                        ? primaryColor
+                        : const Color(0xff808191),
                   ),
                 ),
                 label: '',
@@ -133,7 +141,7 @@ class _MainPageState extends State<MainPage> {
     }
 
     return Scaffold(
-      backgroundColor: backgroundColor1,
+      backgroundColor: currentIndex == 0 ? backgroundColor1 : backgroundColor3,
       floatingActionButton: cartButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: customBottonNav(),
