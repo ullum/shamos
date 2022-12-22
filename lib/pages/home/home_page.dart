@@ -86,7 +86,7 @@ class HomePage extends StatelessWidget {
                   horizontal: 12,
                   vertical: 10,
                 ),
-                margin: EdgeInsets.only(right: 16),
+                margin: const EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
@@ -107,7 +107,7 @@ class HomePage extends StatelessWidget {
                   horizontal: 12,
                   vertical: 10,
                 ),
-                margin: EdgeInsets.only(right: 16),
+                margin: const EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
@@ -128,7 +128,7 @@ class HomePage extends StatelessWidget {
                   horizontal: 12,
                   vertical: 10,
                 ),
-                margin: EdgeInsets.only(right: 16),
+                margin: const EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
@@ -149,7 +149,7 @@ class HomePage extends StatelessWidget {
                   horizontal: 12,
                   vertical: 10,
                 ),
-                margin: EdgeInsets.only(right: 16),
+                margin: const EdgeInsets.only(right: 16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(
@@ -190,7 +190,7 @@ class HomePage extends StatelessWidget {
 
     Widget popularProducts() {
       return Container(
-        margin: EdgeInsets.only(top: 14),
+        margin: const EdgeInsets.only(top: 14),
         child: SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
@@ -199,7 +199,7 @@ class HomePage extends StatelessWidget {
                 width: defaultMargin,
               ),
               Row(
-                children: [
+                children: const [
                   ProductCard(),
                   ProductCard(),
                   ProductCard(),
@@ -230,9 +230,9 @@ class HomePage extends StatelessWidget {
 
     Widget newArrivals() {
       return Container(
-        margin: EdgeInsets.only(top: 14),
+        margin: const EdgeInsets.only(top: 14),
         child: Column(
-          children: [
+          children: const [
             ProductTile(),
             ProductTile(),
             ProductTile(),

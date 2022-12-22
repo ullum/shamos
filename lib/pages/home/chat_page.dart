@@ -35,7 +35,7 @@ class ChatPage extends StatelessWidget {
                 'assets/icon_headset.png',
                 width: 80,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 'Opps no message yet?',
                 style: primaryTextStyle.copyWith(
@@ -43,17 +43,17 @@ class ChatPage extends StatelessWidget {
                   fontWeight: medium,
                 ),
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
               Text(
                 'You have never done a transaction',
                 style: secondTextStyle,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 height: 44,
                 child: TextButton(
                   style: TextButton.styleFrom(
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 24,
                       vertical: 10,
                     ),
@@ -87,7 +87,7 @@ class ChatPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: defaultMargin,
             ),
-            children: [
+            children: const [
               ChatTile(),
             ],
           ),

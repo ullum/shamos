@@ -27,7 +27,7 @@ class ProductTile extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(width: 12),
+            const SizedBox(width: 12),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +38,7 @@ class ProductTile extends StatelessWidget {
                       fontSize: 12,
                     ),
                   ),
-                  SizedBox(height: 6),
+                  const SizedBox(height: 6),
                   Text(
                     'Predator 20.3 Firm Ground',
                     style: primaryTextStyle.copyWith(
@@ -46,7 +46,7 @@ class ProductTile extends StatelessWidget {
                       fontWeight: semiBold,
                     ),
                   ),
-                  SizedBox(height: 6),
+                  const SizedBox(height: 6),
                   Text(
                     '\$68,47',
                     style: priceTextStyle.copyWith(

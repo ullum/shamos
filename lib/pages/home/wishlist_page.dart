@@ -84,7 +84,7 @@ class WishlistPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: defaultMargin,
             ),
-            children: [
+            children: const [
               WishlistCard(),
               WishlistCard(),
               WishlistCard(),

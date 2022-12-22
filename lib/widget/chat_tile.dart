@@ -8,10 +8,10 @@ class ChatTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/detail-chat');  
+        Navigator.pushNamed(context, '/detail-chat');
       },
       child: Container(
-        margin: EdgeInsets.only(top: 33),
+        margin: const EdgeInsets.only(top: 33),
         child: Column(
           children: [
             Row(
@@ -20,7 +20,7 @@ class ChatTile extends StatelessWidget {
                   'assets/icon_shop_logo.png',
                   width: 54,
                 ),
-                SizedBox(width: 12),
+                const SizedBox(width: 12),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,8 +49,8 @@ class ChatTile extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 12),
-            Divider(
+            const SizedBox(height: 12),
+            const Divider(
               thickness: 1,
               color: Color(0xff2B2939),
             )
