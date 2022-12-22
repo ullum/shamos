@@ -91,11 +91,121 @@ class _ProductPageState extends State<ProductPage> {
       );
     }
 
+    Widget content() {
+      return Container(
+        width: double.infinity,
+        margin: const EdgeInsets.only(top: 17),
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.vertical(
+            top: Radius.circular(24),
+          ),
+          color: backgroundColor1,
+        ),
+        child: Column(
+          children: [
+            // Note: HEADER
+            Container(
+              margin: EdgeInsets.only(
+                top: defaultMargin,
+                left: defaultMargin,
+                right: defaultMargin,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'TERREX URBAN LOW',
+                          style: primaryTextStyle.copyWith(
+                            fontSize: 18,
+                            fontWeight: semiBold,
+                          ),
+                        ),
+                        Text(
+                          'Hiking',
+                          style: secondTextStyle.copyWith(
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Image.asset(
+                    'assets/button_wishlist.png',
+                    width: 46,
+                  ),
+                ],
+              ),
+            ),
+
+            // NOTES : PRICE
+            Container(
+              margin: EdgeInsets.only(
+                top: 20,
+                left: defaultMargin,
+                right: defaultMargin,
+              ),
+              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: backgroundColor2,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Price starts from', style: primaryTextStyle),
+                  Text(
+                    '\$143,98',
+                    style: priceTextStyle.copyWith(
+                      fontSize: 16,
+                      fontWeight: semiBold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // NOTE: description
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.only(
+                top: defaultMargin,
+                left: defaultMargin,
+                right: defaultMargin,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Description',
+                    style: primaryTextStyle.copyWith(
+                      fontWeight: medium,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    'unpaved strails and mixed unpaved strails and mixed unpaved strails and mixed unpaved strails and mixed unpaved strails and mixed unpaved strails and mixed',
+                    style: subtitleTextStyle.copyWith(
+                      fontWeight: light,
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: backgroundColor6,
       body: ListView(
         children: [
           header(),
+          content(),
         ],
       ),
     );
