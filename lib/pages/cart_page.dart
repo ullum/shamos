@@ -49,8 +49,8 @@ class CartPage extends StatelessWidget {
               child: TextButton(
                 onPressed: () {
                   // Navigator.pop(context);
-                  Navigator.pushAndRemoveUntil(
-                      context, '/cart', (route) => false);
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, '/home', (route) => false);
                   // kembali ke beranda
                 },
                 style: TextButton.styleFrom(
