@@ -76,6 +76,9 @@ class CartPage extends StatelessWidget {
 
     Widget content() {
       return ListView(
+        padding: EdgeInsets.symmetric(
+          horizontal: defaultMargin,
+        ),
         children: [
           CartCard(),
         ],
@@ -85,8 +88,8 @@ class CartPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor3,
       appBar: header(),
-      body: emptyCart(),
-      // body: content(),
+      // body: emptyCart(),
+      body: content(),
     );
   }
 }
