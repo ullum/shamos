@@ -25,6 +25,7 @@ class CartCard extends StatelessWidget {
         children: [
           Row(
             children: [
+              // gambar di bugkus container
               Container(
                 width: 60,
                 height: 60,
@@ -36,6 +37,7 @@ class CartCard extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 12),
+              // title product di beri expand agar tidak overload
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
