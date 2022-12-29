@@ -34,7 +34,7 @@ class CheckoutCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Terrex Urban Low',
+                  'Terrex Urban Low ',
                   style: primaryTextStyle.copyWith(
                     fontSize: 14,
                     fontWeight: semiBold,
