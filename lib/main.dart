@@ -7,6 +7,7 @@ import 'package:shamos/pages/product_page.dart';
 import 'package:shamos/pages/sign_in_page.dart';
 import 'package:shamos/pages/sign_up_page.dart';
 import 'package:shamos/pages/splash_page.dart';
+import 'package:shamos/pages/checkout_page.dart';
 
 void main() => runApp(const MyApp());
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         '/edit-profile': (context) => EditProfilePage(),
         '/product': (context) => ProductPage(),
         '/cart': (context) => CartPage(),
+        '/checkout': (context) => CheckoutPage(),
       },
     );
   }
