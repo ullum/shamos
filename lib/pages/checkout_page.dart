@@ -86,7 +86,7 @@ class CheckoutPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Store Location',
+                          'Store Location ',
                           style: subtitleTextStyle.copyWith(
                             fontSize: 12,
                             fontWeight: light,
