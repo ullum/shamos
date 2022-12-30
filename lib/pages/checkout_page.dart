@@ -36,9 +36,19 @@ class CheckoutPage extends StatelessWidget {
                   ),
                 ),
                 CheckoutCard(),
+                CheckoutCard(),
               ],
             ),
           ),
+          // END
+
+          // NOTE: ADDRESS DETAILS
+          Container(),
+          // END
+
+          // NOTE: PAYMENT
+          Container(),
+          // END
         ],
       );
     }
