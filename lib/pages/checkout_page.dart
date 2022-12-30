@@ -12,7 +12,7 @@ class CheckoutPage extends StatelessWidget {
       return AppBar(
         backgroundColor: backgroundColor1,
         centerTitle: true,
-        title: Text('Checkout Details'),
+        title: const Text('Checkout Details'),
         elevation: 0,
       );
     }
@@ -123,12 +123,13 @@ class CheckoutPage extends StatelessWidget {
 
           // NOTE: PAYMENT
           Container(
-              margin: EdgeInsets.only(top: defaultMargin),
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(
-                color: backgroundColor4,
-                borderRadius: BorderRadius.circular(12),
-              )),
+            margin: EdgeInsets.only(top: defaultMargin),
+            padding: const EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: backgroundColor4,
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
           // END
         ],
       );
