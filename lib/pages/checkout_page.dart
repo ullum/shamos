@@ -129,6 +129,85 @@ class CheckoutPage extends StatelessWidget {
               color: backgroundColor4,
               borderRadius: BorderRadius.circular(12),
             ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Payment Summary',
+                  style: primaryTextStyle.copyWith(
+                    fontSize: 16,
+                    fontWeight: medium,
+                  ),
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Product Quantity',
+                      style: secondTextStyle.copyWith(
+                        fontWeight: light,
+                      ),
+                    ),
+                    Text(
+                      '2 Items',
+                      style: primaryTextStyle,
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Product Price',
+                      style: secondTextStyle.copyWith(
+                        fontWeight: light,
+                      ),
+                    ),
+                    Text(
+                      '\$576.96',
+                      style: primaryTextStyle,
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Shipping',
+                      style: secondTextStyle.copyWith(
+                        fontWeight: light,
+                      ),
+                    ),
+                    Text(
+                      'Free',
+                      style: primaryTextStyle,
+                    )
+                  ],
+                ),
+                const SizedBox(height: 12),
+                const Divider(
+                  thickness: 1,
+                  color: Color(0xff2E3141),
+                ),
+                const SizedBox(height: 10),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Total',
+                      style: priceTextStyle.copyWith(fontWeight: semiBold),
+                    ),
+                    Text(
+                      '\$575.92',
+                      style: priceTextStyle.copyWith(fontWeight: semiBold),
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
           // END
         ],
