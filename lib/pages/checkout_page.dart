@@ -210,6 +210,38 @@ class CheckoutPage extends StatelessWidget {
             ),
           ),
           // END
+
+          // NOTE: CHECKOUT BUTTON
+          SizedBox(height: defaultMargin),
+          const Divider(
+            thickness: 1,
+            color: Color(0xff2E3141),
+          ),
+          Container(
+            // tinggi 50
+            height: 50,
+            width: double.infinity,
+            margin: EdgeInsets.symmetric(
+              vertical: defaultMargin,
+            ),
+            child: TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                backgroundColor: primaryColor,
+              ),
+              child: Text(
+                'Checkout Now',
+                style: primaryTextStyle.copyWith(
+                  fontSize: 16,
+                  fontWeight: semiBold,
+                ),
+              ),
+            ),
+          ),
+          // END
         ],
       );
     }
