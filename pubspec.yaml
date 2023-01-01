@@ -33,8 +33,13 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  google_fonts: ^3.0.1
+  google_fonts: ^1.1.2
   carousel_slider: ^3.0.0
+  # carousel_slider: ^3.0.0 -> membuat slider
+  provider: ^4.3.3
+  # provider: ^6.0.5 -> Pembungkus di sekitar InheritedWidget agar lebih mudah digunakan dan lebih dapat digunakan kembali.
+  http: ^0.12.2
+  # http: ^0.13.5 -> membuat permintaan HTTP.
 
 dev_dependencies:
   flutter_test:

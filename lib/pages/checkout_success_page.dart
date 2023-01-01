@@ -71,7 +71,7 @@ class CheckoutSuccessPage extends StatelessWidget {
               child: TextButton(
                 onPressed: () {},
                 style: TextButton.styleFrom(
-                  backgroundColor: Color(0xff393748),
+                  backgroundColor: const Color(0xff393748),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
@@ -81,7 +81,7 @@ class CheckoutSuccessPage extends StatelessWidget {
                   style: primaryTextStyle.copyWith(
                     fontSize: 16,
                     fontWeight: medium,
-                    color: Color(0xffB7B6BF),
+                    color: const Color(0xffB7B6BF),
                   ),
                 ),
               ),
