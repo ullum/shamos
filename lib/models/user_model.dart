@@ -26,7 +26,7 @@ class UserModel {
     email = json['email'];
     username = json['username'];
     profilePhotoUrl = json['profile_photo_url'];
-    token = json['access_token']; // antar token / access_token
+    token = json['token']; // antar token / access_token
   }
 
   // membuat function untuk merubah model ke dalam bentuk json
@@ -42,7 +42,7 @@ class UserModel {
       'email': email,
       'username': username,
       'profile_photo_url': profilePhotoUrl,
-      'access_token': token, // antar token / access_token
+      'token': token, // antar token / access_token
     };
   }
 }
