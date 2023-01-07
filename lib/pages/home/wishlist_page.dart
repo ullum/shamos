@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:shamos/providers/wishlist_provider.dart';
 import 'package:shamos/theme.dart';
 
 import '../../widget/wishlist_card.dart';
@@ -8,6 +10,8 @@ class WishlistPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    WishlistProvider wishlistProvider = Provider.of<WishlistProvider>(context);
+    //
     // bagian atas page
     Widget header() {
       return AppBar(
@@ -84,11 +88,11 @@ class WishlistPage extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: defaultMargin,
             ),
-            children: const [
-              WishlistCard(),
-              WishlistCard(),
-              WishlistCard(),
-            ],
+            children: wishlistProvider.wishlist
+                .map(
+                  (product) => WishlistCard(product),
+                )
+                .toList(),
           ),
         ),
       );
@@ -98,7 +102,7 @@ class WishlistPage extends StatelessWidget {
       children: [
         header(),
         // emptyWishlist(),
-        content(),
+        wishlistProvider.wishlist.length == 0 ? emptyWishlist() : content(),
       ],
     );
   }
